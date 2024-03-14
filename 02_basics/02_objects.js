@@ -35,7 +35,7 @@ JsUser.email = "rasika@chatgpt.com"
 //     name: 'Rasika',
 //     full_name: 'Rasika Khapate',
 //     Age: 24,
-//     email: 'rasika@google.com', - email didnt overwrite to rasika@chatgpt.com after using object freeze since this doesnt allow overwriting of objects.
+//     email: 'rasika@google.com', ----------------------------------- email didnt overwrite to rasika@chatgpt.com after using object freeze since this doesnt allow overwriting of objects.
 //     isLoggedIn: false,
 //     lastLoggedInDays: [ 'Monday', 'Saturday' ],
 //     [Symbol(key)]: 'anotherKey'  ----------------------- symbol key
