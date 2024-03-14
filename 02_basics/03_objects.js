@@ -32,7 +32,7 @@ const regularUser = {
 // console.log(regularUser.full_name?.userfullname.last_name)  // OPTIONAL CHAINING (will learn about it further)
 
 // MERGING TWO OBJECTS
-//----------------------------------------
+//------------------------------
 
 const obj1 = {1:"a", 2:"b"}
 const obj2 = {3:"a", 4:"d"}
@@ -83,4 +83,21 @@ console.log(Object.entries(singletonObject)); //[ [ 'id', '123abc' ], [ 'name', 
 
 console.log(singletonObject.hasOwnProperty("isLoggedIn")); //true ----- THIS IS LIKE OPTIONAL CHAINING 
 console.log(singletonObject.hasOwnProperty("isLogged")); //false
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+// DESTRUCTING:
+
+const student = {
+    name : "anjali",
+    subject : "computerscience",
+    grade : "A",
+    roll_no : 21,
+    isVaccinated : true
+}
+
+// let {name, grade, isVaccinated} = student
+console.log(name); // anjali
+let {name , grade , isVaccinated : isVac} = student
+console.log(isVac); // true  --------------- destructed variable i.e, isVaccinated is redefined as isVac and this can be accessibel too
 
